@@ -1,0 +1,11 @@
+p {
+  max-width: 550px;
+}
+
+.card-img-top {
+  max-height: 300px;
+}
+
+.card-body {
+  background-color: hsl(210, 60%, 98%);
+}
