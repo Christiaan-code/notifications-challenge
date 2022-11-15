@@ -1,0 +1,10 @@
+<div class="header">
+  <div class="d-flex flex-row bd-highlight mb-3">
+    <p class="font-header"><b> Notifications</b></p>
+
+    <span class="bd-highlight">{{ unreads }}</span>
+    
+    <p class="ml-auto p-2 read-all"><span>Mark all as read</span></p>
+  </div>
+    <app-notification-item *ngFor="let notification of notifications"></app-notification-item> 
+</div>

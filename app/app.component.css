@@ -9,3 +9,19 @@ p {
 .card-body {
   background-color: hsl(210, 60%, 98%);
 }
+
+.notifications-container {
+  background-color: white;
+  padding: 20px 40px;
+  margin: auto;
+  max-width: 650px;
+  box-shadow: 4px rgb(0, 0, 0);
+}
+
+.app {
+  background-color: #f8fafe;
+}
+
+.font-thick {
+  font-weight: 1000;
+}
