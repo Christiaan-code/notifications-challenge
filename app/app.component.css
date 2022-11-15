@@ -14,8 +14,13 @@ p {
   background-color: white;
   padding: 20px 40px;
   margin: auto;
-  max-width: 650px;
-  box-shadow: 4px rgb(0, 0, 0);
+  max-width: 700px;
+  box-shadow: 0 0 6px 2px hsl(219, 14%, 63%, 10%), 0 3px 20px 10px hsl(219, 14%, 63%, 0%) !important;
+}
+
+.buffer {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .app {

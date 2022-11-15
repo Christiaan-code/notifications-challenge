@@ -1,0 +1,44 @@
+.notification-item {
+  /* box-shadow: 0.5px 0.5px hsl(219, 14%, 63%); */
+  cursor: pointer;
+  margin: 10px 0px;
+  padding: 15px;
+}
+
+.profile-picture {
+  object-fit: cover;
+  height: 50px;
+  width: 50px;
+}
+
+.unread {
+  height: 2px;
+  width: 2px;
+  align-self: center;
+  padding: 5px 5px;
+  margin-left: 7px;
+  border-radius: 50%;
+  background: hsl(1, 90%, 64%);
+}
+
+.user {
+  font-weight: bold;
+  color: hsl(224, 21%, 14%);
+}
+
+.content {
+  align-self: center;
+  margin-left: 15px;
+  color: hsl(219, 12%, 42%);
+}
+
+.subject {
+  color: hsl(219, 85%, 26%);
+  font-weight: bold;
+}
+
+.timestamp {
+  margin-left: 15px;
+  color: hsl(219, 14%, 63%);
+  /* font-size: 12px; */
+}

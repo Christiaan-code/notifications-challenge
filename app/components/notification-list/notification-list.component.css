@@ -6,4 +6,14 @@
 
 .read-all {
   text-align: right;
+  cursor: pointer;
+}
+
+.alert-count {
+  top: 50%;
+  font-size: smaller;
+  background-color: hsl(219, 85%, 26%);
+  padding: 2px 12px;
+  color: white;
+  border-radius: 6px;
 }
