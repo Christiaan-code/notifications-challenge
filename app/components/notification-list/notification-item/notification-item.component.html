@@ -1,20 +1,21 @@
-<div
-  appUnread
-  [isUnread]="notification.unread"
-  class="d-flex flex-row notification-item"
->
-  <img class="profile-picture rounded-circle" [src]="notification.imagePath" />
-  <div class="d-flex flex-column">
-    <div class="col-md-12">
-      <div class="row">
-        <span class="content"
-          ><span class="user">{{ notification.user }}</span>
-          {{ notification.content }}
-          <span class="subject">{{ notification.subject }}</span></span
-        >
+<div appUnread [isUnread]="notification.unread" class="notification-item">
+  <div class="d-flex flex-row">
+    <img
+      class="profile-picture rounded-circle"
+      [src]="notification.imagePath"
+    />
+    <div class="d-flex flex-column content-container">
+      <span class="content">
+        <span class="user">{{ notification.user }}</span>
+        {{ notification.content }}
+        <span class="subject">{{ notification.subject }}</span>
         <span class="unread" *ngIf="notification.unread"></span>
-      </div>
+      </span>
+      <div class="timestamp">{{ notification.timestamp }}</div>
     </div>
-    <div class="timestamp">{{ notification.timestamp }}</div>
+    <div *ngIf="notification.pictureSubject" class="ml-auto">
+      <img [src]="notification.pictureSubject" class="picture-subject"/>
+    </div>
   </div>
+  <div *ngIf="notification.privateMessage" class="personal-message">{{notification.privateMessage}}</div>
 </div>

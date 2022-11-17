@@ -7,7 +7,7 @@ p {
 }
 
 .card-body {
-  background-color: hsl(210, 60%, 98%);
+  background-color: #F6FAFC;
 }
 
 .notifications-container {
@@ -24,7 +24,7 @@ p {
 }
 
 .app {
-  background-color: #f8fafe;
+  background-color: #F9FAFD;
 }
 
 .font-thick {

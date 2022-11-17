@@ -6,5 +6,7 @@ export class Notification {
     public timestamp: string,
     public unread: boolean,
     public subject?: string,
+    public privateMessage?: string,
+    public pictureSubject?: string,
   ) {}
 }

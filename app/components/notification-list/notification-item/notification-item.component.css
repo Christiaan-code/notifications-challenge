@@ -3,6 +3,7 @@
   cursor: pointer;
   margin: 10px 0px;
   padding: 15px;
+  border-radius: 8px;
 }
 
 .profile-picture {
@@ -12,18 +13,40 @@
 }
 
 .unread {
-  height: 2px;
-  width: 2px;
-  align-self: center;
-  padding: 5px 5px;
+  padding: 4px 4px;
   margin-left: 7px;
   border-radius: 50%;
   background: hsl(1, 90%, 64%);
+  font-size: 0px;
+  position: absolute;
+  margin-top: 8px;
+}
+
+.personal-message {
+  margin-top: 10px;
+  margin-left: 65px;
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 4px;
+  padding: 10px 20px;
+  color: hsl(219, 12%, 42%);
+}
+
+.personal-message:hover {
+  background-color: #e4eff9;
 }
 
 .user {
   font-weight: bold;
   color: hsl(224, 21%, 14%);
+}
+
+.user:hover,
+.subject:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+.content-container {
+  justify-content: space-between;
 }
 
 .content {
@@ -33,8 +56,11 @@
 }
 
 .subject {
-  color: hsl(219, 85%, 26%);
   font-weight: bold;
+}
+
+.picture-subject {
+  height: 50px;
 }
 
 .timestamp {
