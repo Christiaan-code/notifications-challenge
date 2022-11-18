@@ -14,7 +14,9 @@
       <div class="timestamp">{{ notification.timestamp }}</div>
     </div>
     <div *ngIf="notification.pictureSubject" class="ml-auto">
-      <img [src]="notification.pictureSubject" class="picture-subject"/>
+      <div class="d-flex justify-content-center align-items-center picture-container" style="border-radius: 10px">
+        <img [src]="notification.pictureSubject" class="picture-subject"/>
+      </div>
     </div>
   </div>
   <div *ngIf="notification.privateMessage" class="personal-message">{{notification.privateMessage}}</div>

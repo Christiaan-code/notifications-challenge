@@ -60,7 +60,16 @@
 }
 
 .picture-subject {
-  height: 50px;
+  height: 40px;
+}
+
+.picture-container:hover {
+  background-color: #e4eff9;
+}
+
+.picture-container {
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .timestamp {
